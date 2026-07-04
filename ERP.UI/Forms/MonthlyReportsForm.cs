@@ -103,7 +103,6 @@ namespace ERP.UI.Forms
             // Grid
             grid = new DataGridView { Dock = DockStyle.Fill, RightToLeft = RightToLeft.Yes };
             UIHelper.StyleGrid(grid);
-            // إيقاف الترتيب لمنع انهيار البرنامج عند الضغط على رأس الأعمدة
             grid.Columns.AddRange(
                 new DataGridViewTextBoxColumn { Name = "Type", HeaderText = "النوع", Width = 150, SortMode = DataGridViewColumnSortMode.NotSortable },
                 new DataGridViewTextBoxColumn { Name = "Count", HeaderText = "العدد", Width = 100, SortMode = DataGridViewColumnSortMode.NotSortable },
@@ -176,7 +175,6 @@ namespace ERP.UI.Forms
 
             grid.Rows.Clear();
 
-            // تحويل الأرقام إلى نصوص لمنع حدوث خطأ تعارض الأنواع (Type Mismatch) عند وجود خلايا فارغة
             // Sales
             grid.Rows.Add("فواتير المبيعات", sellBills.Count.ToString(), sellBills.Sum(b => b.Asked).ToString("N2"));
             // Purchases
