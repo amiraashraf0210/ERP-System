@@ -1,0 +1,38 @@
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Re]leases/
+x64/
+x86/
+build/
+bin/
+obj/
+
+# Visual Studio cache/options directory
+.vs/
+
+# Log files
+*.log
+err.txt
+
+# Executables and build outputs
+*.exe
+*.dll
+*.pdb
+*.db
+*.db-shm
+*.db-wal
+
+# Build/Publish/Tooling output folders
+Publish/
+ClientPackage/Program/
+SalesTools/
+VendorTools/
